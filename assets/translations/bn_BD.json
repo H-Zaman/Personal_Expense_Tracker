@@ -1,3 +1,14 @@
 {
-  "expense_tracker" : "ব্যয় ট্র্যাকার"
+  "expense_tracker" : "ব্যয় ট্র্যাকার",
+  "spent_this_obj" : "এই @obj খরচ",
+  "today" : "আজ",
+  "day" : "দিন",
+  "days" : "দিনের",
+  "week" : "সপ্তাহ",
+  "weeks" : "সপ্তাহের",
+  "month" : "মাস",
+  "months" : "মাসের",
+  "year" : "বছর",
+  "years" : "বছরের",
+  "bdt" : "টাকা"
 }

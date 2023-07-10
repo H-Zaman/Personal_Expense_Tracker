@@ -11,5 +11,16 @@ class Translated{
   static const localeBn = Locale('bn', 'BD');
 
   static const String expenseTracker = 'expense_tracker';
+  static const String spentThisObj = 'spent_this_obj';
+  static const String today = 'today';
+  static const String day = 'day';
+  static const String days = 'days';
+  static const String week = 'week';
+  static const String weeks = 'weeks';
+  static const String month = 'month';
+  static const String months = 'months';
+  static const String year = 'year';
+  static const String years = 'years';
+  static const String bdt = 'BDT';
 
 }

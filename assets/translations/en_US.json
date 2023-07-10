@@ -1,3 +1,14 @@
 {
-  "expense_tracker" : "Expense Tracker"
+  "expense_tracker" : "Expense Tracker",
+  "spent_this_obj" : "Spent this @obj",
+  "today" : "today",
+  "day" : "day",
+  "days" : "days",
+  "week" : "week",
+  "weeks" : "weeks",
+  "month" : "month",
+  "months" : "months",
+  "year" : "year",
+  "years" : "years",
+  "bdt" : "bdt"
 }
