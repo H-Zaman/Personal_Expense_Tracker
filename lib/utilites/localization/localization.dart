@@ -12,7 +12,7 @@ class AppLocalization extends Translations {
   static final _cache = _AppLocaleCache();
 
   static Future<void> init() async{
-    await _AppLocaleCache.init();
+    await _cache.init();
     final translationStrings = await Future.wait([
       rootBundle.loadString('assets/translations/en_US.json'),
       rootBundle.loadString('assets/translations/bn_BD.json'),
@@ -47,9 +47,9 @@ class AppLocalization extends Translations {
 }
 
 class _AppLocaleCache{
-  static final GetStorage _storage = GetStorage('_AppLocaleCache');
+  final GetStorage _storage = GetStorage('_AppLocaleCache');
 
-  static Future<void> init () async=> await _storage.initStorage;
+  Future<void> init () async=> await _storage.initStorage;
 
   Future<void> saveLocale(Locale locale) async => await _storage.write('_AppLocaleCache', locale.toString());
 
