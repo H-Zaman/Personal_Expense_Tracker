@@ -1,4 +1,5 @@
 import 'package:expensetracker/app/view/home_screen.dart';
+import 'package:expensetracker/utilites/localization/translations.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -25,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Center(
         child: Text(
-          'Splash Screen'
+          Translated.expenseTracker.tr
         ),
       ),
     );
