@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:expensetracker/utilites/localization/translations.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -62,4 +63,27 @@ class _AppLocaleCache{
       return Translated.defaultLocale;
     }
   }
+}
+
+
+class MaterialLocalizationBnDelegate extends LocalizationsDelegate<MaterialLocalizations> {
+  @override
+  bool isSupported(Locale locale) => true;
+
+  @override
+  Future<MaterialLocalizations> load(Locale locale) async => DefaultMaterialLocalizations();
+
+  @override
+  bool shouldReload(old) => false;
+}
+
+class CupertinoLocalizationBnDelegate extends LocalizationsDelegate<CupertinoLocalizations> {
+  @override
+  bool isSupported(Locale locale) => true;
+
+  @override
+  Future<CupertinoLocalizations> load(Locale locale) async => DefaultCupertinoLocalizations();
+
+  @override
+  bool shouldReload(old) => false;
 }

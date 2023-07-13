@@ -3,6 +3,7 @@ import 'package:expensetracker/splash_screen.dart';
 import 'package:expensetracker/utilites/localization/localization.dart';
 import 'package:expensetracker/utilites/localization/translations.dart';
 import 'package:expensetracker/utilites/theme.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,8 +23,15 @@ class App extends StatelessWidget {
       themeMode: AppTheme.currentTheme,
       initialRoute: SplashScreen.route,
       translations: AppLocalization(),
-      locale: Translated.defaultLocale,
+      fallbackLocale: Translated.defaultLocale,
       supportedLocales: Translated.availableLocales,
+      localizationsDelegates: [
+        DefaultMaterialLocalizations.delegate,
+        DefaultCupertinoLocalizations.delegate,
+        DefaultWidgetsLocalizations.delegate,
+        MaterialLocalizationBnDelegate(),
+        CupertinoLocalizationBnDelegate(),
+      ],
     );
   }
 }

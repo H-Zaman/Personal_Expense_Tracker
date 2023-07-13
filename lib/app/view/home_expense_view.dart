@@ -2,7 +2,6 @@ import 'package:expensetracker/app/controller/expense_controller.dart';
 import 'package:expensetracker/app/view/widget/expense_list_tile.dart';
 import 'package:expensetracker/utilites/localization/translations.dart';
 import 'package:expensetracker/utilites/text_style.dart';
-import 'package:expensetracker/utilites/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
@@ -44,25 +43,6 @@ class _HomeExpenseViewState extends State<HomeExpenseView> {
 
         return Column(
           children: [
-            Row(
-              children: [
-                Spacer(),
-                IconButton(
-                  onPressed: (){
-                    if(AppTheme.currentTheme == ThemeMode.light){
-                      AppTheme.updateTheme(ThemeMode.dark);
-                    }else{
-                      AppTheme.updateTheme(ThemeMode.light);
-                    }
-                  },
-                  icon: Icon(
-                    Icons.add_box
-                  ),
-                  iconSize: 32,
-                )
-              ],
-            ),
-
             AnimatedCrossFade(
               firstCurve: Curves.bounceInOut,
               secondCurve: Curves.bounceInOut,

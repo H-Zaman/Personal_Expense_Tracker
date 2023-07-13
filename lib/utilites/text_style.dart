@@ -7,5 +7,6 @@ class AppTextStyle{
   static TextStyle regular (BuildContext context) => Theme.of(context).textTheme.bodyLarge!;
   static TextStyle medium (BuildContext context) => Theme.of(context).textTheme.bodyMedium!;
   static TextStyle small (BuildContext context) => Theme.of(context).textTheme.bodySmall!;
-  static TextStyle extraSmall (BuildContext context) => Theme.of(context).textTheme.labelSmall!;
+  static TextStyle  extraSmall (BuildContext context) => Theme.of(context).textTheme.labelSmall!;
+  static TextStyle  extraSmallInverted (BuildContext context) => Theme.of(context).textTheme.displaySmall!;
 }

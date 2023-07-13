@@ -22,5 +22,13 @@ class Translated{
   static const String year = 'year';
   static const String years = 'years';
   static const String bdt = 'BDT';
+  static const String language = 'language';
+  static const String switchObj = 'switch_obj';
+  static const String switchToObj = 'switch_to_obj';
+  static const String theme = 'theme';
+  static const String light = 'light';
+  static const String dark = 'dark';
+  static const String selectObj = 'select_obj';
+  static const String active = 'active';
 
 }

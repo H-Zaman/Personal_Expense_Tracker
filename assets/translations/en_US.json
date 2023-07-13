@@ -1,4 +1,6 @@
 {
+  "en" : "English",
+  "bn" : "Bangla",
   "expense_tracker" : "Expense Tracker",
   "spent_this_obj" : "Spent this @obj",
   "today" : "today",
@@ -10,5 +12,13 @@
   "months" : "months",
   "year" : "year",
   "years" : "years",
-  "bdt" : "bdt"
+  "bdt" : "bdt",
+  "language" : "language",
+  "active" : "active",
+  "switch_obj" : "Switch @obj",
+  "select_obj" : "Select @obj",
+  "switch_to_obj" : "Switch to @obj",
+  "theme" : "theme",
+  "light" : "light",
+  "dark" : "dark"
 }

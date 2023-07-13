@@ -18,6 +18,7 @@ class AppTheme{
 
   static ThemeData light = ThemeData(
     scaffoldBackgroundColor: Colors.white,
+    primaryColor: AppColors.dark,
     textTheme: GoogleFonts.ralewayTextTheme(TextTheme(
       /// headline
       labelLarge: TextStyle(
@@ -56,10 +57,23 @@ class AppTheme{
         color: AppColors.dark,
         fontSize: 10
       ),
-    ))
+      /// extra-small-inverted
+      displaySmall: TextStyle(
+        color: Colors.white,
+        fontSize: 10
+      ),
+    )),
+    iconTheme: IconThemeData(
+      color: AppColors.dark
+    ),
+    listTileTheme: ListTileThemeData(
+      iconColor: AppColors.dark
+    )
   );
+
   static ThemeData dark = ThemeData(
     scaffoldBackgroundColor: AppColors.dark,
+    primaryColor: Colors.white,
     textTheme: GoogleFonts.ralewayTextTheme(TextTheme(
       /// headline
       labelLarge: TextStyle(
@@ -98,7 +112,18 @@ class AppTheme{
         color: Colors.white,
         fontSize: 10
       ),
-    ))
+      /// extra-small-inverted
+      displaySmall: TextStyle(
+        color: AppColors.dark,
+        fontSize: 10
+      ),
+    )),
+    iconTheme: IconThemeData(
+      color: Colors.white
+    ),
+    listTileTheme: ListTileThemeData(
+      iconColor: Colors.white
+    )
   );
 
   static Future<void> updateTheme(ThemeMode theme) async{

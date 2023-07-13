@@ -1,4 +1,6 @@
 {
+  "en" : "ইংরেজি",
+  "bn" : "বাংলা",
   "expense_tracker" : "ব্যয় ট্র্যাকার",
   "spent_this_obj" : "এই @obj খরচ",
   "today" : "আজ",
@@ -10,5 +12,13 @@
   "months" : "মাসের",
   "year" : "বছর",
   "years" : "বছরের",
-  "bdt" : "টাকা"
+  "bdt" : "টাকা",
+  "language" : "ভাষা",
+  "active" : "সক্রিয়",
+  "switch_obj" : "@obj পরিবর্তন",
+  "select_obj" : "@obj নির্বাচন করুন",
+  "switch_to_obj" : "@obj পরিবর্তন করুন",
+  "theme" : "থিম",
+  "light" : "হালকা",
+  "dark" : "অন্ধকার"
 }
