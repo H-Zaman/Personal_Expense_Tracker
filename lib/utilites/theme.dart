@@ -18,7 +18,7 @@ class AppTheme{
 
   static ThemeData light = ThemeData(
     scaffoldBackgroundColor: Colors.white,
-    textTheme: GoogleFonts.interTextTheme(TextTheme(
+    textTheme: GoogleFonts.ralewayTextTheme(TextTheme(
       /// headline
       labelLarge: TextStyle(
         color: AppColors.dark,
@@ -54,13 +54,13 @@ class AppTheme{
       /// extra-small
       labelSmall: TextStyle(
         color: AppColors.dark,
-        fontSize: 12
+        fontSize: 10
       ),
     ))
   );
   static ThemeData dark = ThemeData(
     scaffoldBackgroundColor: AppColors.dark,
-    textTheme: GoogleFonts.interTextTheme(TextTheme(
+    textTheme: GoogleFonts.ralewayTextTheme(TextTheme(
       /// headline
       labelLarge: TextStyle(
         color: Colors.white,
@@ -96,7 +96,7 @@ class AppTheme{
       /// extra-small
       labelSmall: TextStyle(
         color: Colors.white,
-        fontSize: 12
+        fontSize: 10
       ),
     ))
   );

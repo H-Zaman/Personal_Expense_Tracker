@@ -16,6 +16,7 @@ class App extends StatelessWidget {
         SplashScreen.route : (_) => SplashScreen(),
         HomeScreen.route : (_) => HomeScreen(),
       },
+      builder: (_, child) => ScrollConfiguration(behavior: _NoOverScrollGlowScrollBehavior(), child: child!),
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
       themeMode: AppTheme.currentTheme,
@@ -25,4 +26,9 @@ class App extends StatelessWidget {
       supportedLocales: Translated.availableLocales,
     );
   }
+}
+
+class _NoOverScrollGlowScrollBehavior extends ScrollBehavior{
+  @override
+  Widget buildOverscrollIndicator(BuildContext context, Widget child, ScrollableDetails details) => child;
 }

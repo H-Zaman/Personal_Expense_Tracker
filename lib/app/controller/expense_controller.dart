@@ -1,3 +1,4 @@
+import 'package:expensetracker/utilites/localization/translations.dart';
 import 'package:get/get.dart';
 
 class ExpenseController extends GetxController{
@@ -5,9 +6,12 @@ class ExpenseController extends GetxController{
   RxBool _loading = RxBool(true);
   bool get loading => _loading.value;
 
-  num get weekExpense {
-
+  num get homeExpense {
     return 123.34;
+  }
+
+  String get homeExpenseType{
+    return Translated.month.tr;
   }
 
   @override
